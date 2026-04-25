@@ -208,6 +208,61 @@ section.bg-blanco { background: var(--blanco); }
 
 .modulo-card p { font-size: 0.9rem; line-height: 1.55; }
 
+/* ── BONUS ── */
+.bonus h2 {
+  font-size: 1.55rem;
+  color: var(--azul-noche);
+  margin-bottom: 0.75rem;
+}
+
+.bonus-label {
+  display: inline-block;
+  background: #2E7D5E;
+  color: var(--blanco);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.85rem;
+  border-radius: 20px;
+  margin-bottom: 0.9rem;
+}
+
+.bonus-intro {
+  color: #555;
+  font-size: 0.97rem;
+  margin-bottom: 1.75rem;
+}
+
+.bonus-grid { display: flex; flex-direction: column; gap: 1rem; }
+
+.bonus-card {
+  background: #F0FAF5;
+  border: 1px solid #C3E6D4;
+  border-left: 4px solid #2E7D5E;
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.bonus-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.bonus-card h3 {
+  font-size: 1rem;
+  color: #1a5c40;
+  margin-bottom: 0.3rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.bonus-card p { font-size: 0.9rem; line-height: 1.55; color: var(--texto); }
+
 /* ── PARA QUIÉN ── */
 .para-quien h2 {
   font-size: 1.55rem;
@@ -451,6 +506,12 @@ footer a { color: rgba(255,255,255,0.55); text-decoration: underline; }
   .btn-cta-wrap  { text-align: center; }
 
   .modulos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .bonus-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
